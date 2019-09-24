@@ -1,8 +1,9 @@
-[gd_scene load_steps=14 format=2]
+[gd_scene load_steps=15 format=2]
 
 [ext_resource path="res://assets/CV Tile map.png" type="Texture" id=1]
 [ext_resource path="res://Player.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Player.gd" type="Script" id=3]
+[ext_resource path="res://Label.gd" type="Script" id=4]
 
 [sub_resource type="ConvexPolygonShape2D" id=1]
 points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
@@ -153,3 +154,9 @@ tile_data = PoolIntArray( 0, 0, 0, 2, 0, 0, 4, 0, 0, 6, 0, 0, 8, 0, 0, 10, 0, 0,
 position = Vector2( 240, 160 )
 script = ExtResource( 3 )
 
+[node name="Label" type="Label" parent="Player"]
+margin_left = -240.0
+margin_top = -160.0
+margin_right = -200.0
+margin_bottom = -146.0
+script = ExtResource( 4 )
