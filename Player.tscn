@@ -3,7 +3,7 @@
 [ext_resource path="res://assets/Trainer Red.png" type="Texture" id=1]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 16, 16 )
+extents = Vector2( 7.05117, 7.61555 )
 
 [sub_resource type="Animation" id=2]
 resource_name = "up"
@@ -32,8 +32,8 @@ hframes = 3
 frame = 1
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( -1.02168, 4.08673 )
 shape = SubResource( 1 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 anims/up = SubResource( 2 )
-

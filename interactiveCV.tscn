@@ -6,22 +6,22 @@
 [ext_resource path="res://Label.gd" type="Script" id=4]
 
 [sub_resource type="ConvexPolygonShape2D" id=1]
-points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
+points = PoolVector2Array( 4.92311, 3.96967, 11.9001, 3.58206, 11.7063, 12.4972, 4.92311, 12.3034 )
 
 [sub_resource type="ConvexPolygonShape2D" id=2]
-points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
+points = PoolVector2Array( 4.42764, 4.35728, 11.7923, 4.55109, 12.1799, 11.9157, 4.81525, 11.5281 )
 
 [sub_resource type="ConvexPolygonShape2D" id=3]
-points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
+points = PoolVector2Array( 4.9012, 4.93871, 11.6844, 4.55109, 12.6535, 12.4972, 4.5136, 13.0786 )
 
 [sub_resource type="ConvexPolygonShape2D" id=4]
-points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
+points = PoolVector2Array( 5.11691, 2.89279, 12.6754, 4.05562, 12.6754, 12.5831, 5.11691, 12.5831 )
 
 [sub_resource type="ConvexPolygonShape2D" id=5]
 points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
 
 [sub_resource type="ConvexPolygonShape2D" id=6]
-points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
+points = PoolVector2Array( 5.28882, 2.94603, 13.4287, 3.13985, 13.4287, 12.4426, 5.48262, 12.6364 )
 
 [sub_resource type="ConvexPolygonShape2D" id=7]
 points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
