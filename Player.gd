@@ -2,7 +2,6 @@ extends KinematicBody2D
 
 # Contants
 const STEP_SIZE = 16 # size of tiles, so we need how many pixels the player needs to move
-#const STEP_TIME = 5 # Number of frames it takes to move Player across one tile
 const MOVEMENT_SPEED = 1 # Speed of movement
 
 # Variables
@@ -20,44 +19,35 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	
 	player_pos = get_global_position() # Get current position
 	
-	# Maybe check end_pos!= player_pos, but player_pos tends to go over end_pos, since delta is discrete. Maybe use velocity * delta and 
-	# calculate remaining distance remaining
+	## MOVEMENT ##
 	if !moving:
-		## MOVEMENT ##
 		if Input.is_action_pressed("ui_left"):
-			if world.intersect_point(player_pos + Vector2(0 - STEP_SIZE, 0)).empty():
-				direction = Vector2(-1, 0)
-				end_pos = player_pos + Vector2(0 - STEP_SIZE, 0)
+			direction = Vector2(-1, 0)
+			end_pos = player_pos + Vector2(0 - STEP_SIZE, 0)
+			if !test_move(Transform2D(0, player_pos), end_pos - player_pos): # Check if there will be a collision when moving goal position
 				moving = true
 		elif Input.is_action_pressed("ui_right"):
-			if world.intersect_point(player_pos + Vector2(STEP_SIZE, 0)).empty():
-				direction = Vector2(1, 0)
-				end_pos = player_pos + Vector2(STEP_SIZE, 0)
+			direction = Vector2(1, 0)
+			end_pos = player_pos + Vector2(STEP_SIZE, 0)
+			if !test_move(Transform2D(0, player_pos), end_pos - player_pos):
 				moving = true
 		elif Input.is_action_pressed("ui_up"):
-			if world.intersect_point(player_pos + Vector2(0, 0 - STEP_SIZE)).empty():
-				direction = Vector2(0, -1)
-				end_pos = player_pos + Vector2(0, 0 - STEP_SIZE)
+			direction = Vector2(0, -1)
+			end_pos = player_pos + Vector2(0, 0 - STEP_SIZE)
+			if !test_move(Transform2D(0, player_pos), end_pos - player_pos):
 				moving = true
 		elif Input.is_action_pressed("ui_down"):
-			if world.intersect_point(player_pos + Vector2(0, 0 + STEP_SIZE)).empty():
-				direction = Vector2(0, 1)
-				end_pos = player_pos + Vector2(0, 0 + STEP_SIZE)
+			direction = Vector2(0, 1)
+			end_pos = player_pos + Vector2(0, 0 + STEP_SIZE)
+			if !test_move(Transform2D(0, player_pos), end_pos - player_pos):
 				moving = true
 		else:
-#			if (int(player_pos.x) % STEP_SIZE == 0) or (int(player_pos.y) % STEP_SIZE == 0) :
-#				player_vel = Vector2(0,0)
 			moving = false
 
 	if moving:
-		move_and_collide(direction * MOVEMENT_SPEED) # Move player
-		player_pos = get_global_position() 
-		if player_pos == end_pos:
+		move_and_collide(direction * MOVEMENT_SPEED) # Move player a little every frame
+		player_pos = get_global_position() # Check current position	
+		if player_pos == end_pos: # Stop if goal position has been reached
 			moving = false
-	#move_and_collide(player_vel) # Move player
-	
-
-	
