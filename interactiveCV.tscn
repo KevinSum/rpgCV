@@ -160,3 +160,9 @@ margin_top = -160.0
 margin_right = -200.0
 margin_bottom = -146.0
 script = ExtResource( 4 )
+
+[node name="Camera2D" type="Camera2D" parent="Player"]
+offset = Vector2( 8, 8 )
+current = true
+drag_margin_h_enabled = false
+drag_margin_v_enabled = false
