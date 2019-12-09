@@ -22,8 +22,16 @@ config/icon="res://icon.png"
 [display]
 
 window/size/width=512
-window/size/height=384
+window/size/height=288
+window/size/always_on_top=true
+window/stretch/mode="viewport"
+window/stretch/aspect="keep"
+
+[global]
+
+2d=false
 
 [rendering]
 
+quality/2d/use_pixel_snap=true
 environment/default_environment="res://default_env.tres"

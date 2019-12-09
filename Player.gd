@@ -4,6 +4,7 @@ extends KinematicBody2D
 const STEP_SIZE = 16 # size of tiles, so we need how many pixels the player needs to move
 const MOVEMENT_SPEED = 1 # Speed of movement
 
+
 # Variables
 var player_pos = Vector2() # Current coordinate position of player
 var end_pos = Vector2() # Destination coordinate when arrow key is pressed 
@@ -19,7 +20,7 @@ var moving = false  # Check if already moving
 func _ready():
 	world = get_world_2d().get_direct_space_state()
 	animationPlayer = get_node("AnimationPlayer")
-	sprite = get_node("Sprite")
+	sprite = get_node("PlayerSprite")
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
