@@ -52,6 +52,21 @@ func _process(delta):
 			end_pos = player_pos + Vector2(0, 0 + STEP_SIZE)
 			if !test_move(Transform2D(0, player_pos), end_pos - player_pos):
 				moving = true
+				
+		## INTERACT WITH PEOPLE
+		elif Input.is_action_pressed("ui_interact"): # Interact key
+			if sprite.get_frame() == 0: # Check what frame we're on to get direction we're facing (Up)
+				end_pos = player_pos + Vector2(0, 0 - STEP_SIZE) # Find co-ordinates tile we're facing
+			elif sprite.get_frame() == 6: # Down
+				end_pos = player_pos + Vector2(0, 0 + STEP_SIZE)
+			elif sprite.get_frame() == 3: # Left
+				end_pos = player_pos + Vector2(0 - STEP_SIZE, 0)
+			elif sprite.get_frame() == 9: # Right
+				end_pos = player_pos + Vector2(STEP_SIZE, 0)
+			var dictionary = world.intersect_point(end_pos + Vector2(8, 8)) # Get dictionary of ray query (n.b. offset (8.8) to get to collision area as opposed to corner)
+			if dictionary: # If there is a collision thing in the direction we're facing
+				interact(dictionary)
+				
 		else:
 			moving = false
 			if sprite.get_frame() % 3  == 0:
@@ -62,3 +77,10 @@ func _process(delta):
 		player_pos = get_global_position() # Check current position	
 		if player_pos == end_pos: # Stop if goal position has been reached
 			moving = false
+			
+func interact(dictionary):
+	for d in dictionary: 
+		if typeof(d.collider) == TYPE_OBJECT and d.collider.has_node("Interact"):
+			get_node("Camera2D/Dialogue Box").set_visible(true) # Make dialogue box visible
+			get_node("Camera2D/Dialogue Box")._print_dialogue("Oh shit thank god you're here!")
+			

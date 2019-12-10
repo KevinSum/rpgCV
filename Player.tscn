@@ -3,7 +3,7 @@
 [ext_resource path="res://assets/Trainer Red.png" type="Texture" id=1]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 5.59636, 5.47579 )
+extents = Vector2( 6.47974, 5.7992 )
 
 [sub_resource type="Animation" id=2]
 resource_name = "down"
@@ -74,18 +74,19 @@ tracks/0/keys = {
 }
 
 [node name="Player" type="KinematicBody2D"]
+input_pickable = true
 
 [node name="PlayerSprite" type="Sprite" parent="."]
-position = Vector2( 8, 0 )
+position = Vector2( 7.87791, 0.122087 )
 z_index = 1
 z_as_relative = false
 texture = ExtResource( 1 )
 vframes = 4
 hframes = 3
-frame = 5
+frame = 6
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( 8.25371, 9.23946 )
+position = Vector2( 8, 9.0732 )
 shape = SubResource( 1 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]

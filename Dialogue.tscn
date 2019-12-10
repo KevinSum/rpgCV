@@ -1,0 +1,45 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://assets/Dialogue Box.png" type="Texture" id=1]
+[ext_resource path="res://Dialogue.gd" type="Script" id=2]
+[ext_resource path="res://assets/font.ttf" type="DynamicFontData" id=3]
+
+[sub_resource type="DynamicFont" id=6]
+size = 32
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 32
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 32
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=4]
+size = 32
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=5]
+size = 32
+font_data = ExtResource( 3 )
+
+[node name="Dialogue Box" type="NinePatchRect"]
+margin_right = 34.0
+margin_bottom = 32.0
+texture = ExtResource( 1 )
+patch_margin_left = 17
+patch_margin_top = 5
+patch_margin_right = 17
+patch_margin_bottom = 5
+script = ExtResource( 2 )
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+margin_right = 32.0
+margin_bottom = 32.0
+custom_fonts/mono_font = SubResource( 6 )
+custom_fonts/bold_italics_font = SubResource( 2 )
+custom_fonts/italics_font = SubResource( 3 )
+custom_fonts/bold_font = SubResource( 4 )
+custom_fonts/normal_font = SubResource( 5 )
+custom_colors/default_color = Color( 0, 0, 0, 1 )
