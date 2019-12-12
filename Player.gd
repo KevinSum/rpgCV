@@ -15,19 +15,28 @@ var sprite
 
 var player_vel = Vector2() # Current velocity of player
 var moving = false  # Check if already moving
+var canMove = true # Check if player is able to move (Can't when in dialogue)
+var interactPressed = false # Check if intereact button is pressed
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	world = get_world_2d().get_direct_space_state()
+	set_process_input(true)
 	animationPlayer = get_node("AnimationPlayer")
 	sprite = get_node("PlayerSprite")
+	
+func _input(event):
+	if event.is_action_pressed("ui_interact"):
+		interactPressed = true
+	elif event.is_action_released("ui_interact"):
+		interactPressed = false
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	player_pos = get_global_position() # Get current position
 	
 	## MOVEMENT ##
-	if !moving:
+	if !moving and canMove:
 		if Input.is_action_pressed("ui_left"):
 			animationPlayer.play("left")
 			direction = Vector2(-1, 0)
@@ -54,7 +63,7 @@ func _process(delta):
 				moving = true
 				
 		## INTERACT WITH PEOPLE
-		elif Input.is_action_pressed("ui_interact"): # Interact key
+		elif interactPressed: # Interact key
 			if sprite.get_frame() == 0: # Check what frame we're on to get direction we're facing (Up)
 				end_pos = player_pos + Vector2(0, 0 - STEP_SIZE) # Find co-ordinates tile we're facing
 			elif sprite.get_frame() == 6: # Down
@@ -67,10 +76,12 @@ func _process(delta):
 			if dictionary: # If there is a collision thing in the direction we're facing
 				interact(dictionary)
 				
-		else:
+		elif canMove:
 			moving = false
 			if sprite.get_frame() % 3  == 0:
 				animationPlayer.stop(true)
+				
+	interactPressed = false # Ensure bool is only active for one frame
 
 	if moving:
 		move_and_collide(direction * MOVEMENT_SPEED) # Move player a little every frame
@@ -82,5 +93,5 @@ func interact(dictionary):
 	for d in dictionary: 
 		if typeof(d.collider) == TYPE_OBJECT and d.collider.has_node("Interact"):
 			get_node("Camera2D/Dialogue Box").set_visible(true) # Make dialogue box visible
-			get_node("Camera2D/Dialogue Box")._print_dialogue("Oh shit thank god you're here!")
+			get_node("Camera2D/Dialogue Box")._print_dialogue(d.collider.get_node("Interact").text)
 			

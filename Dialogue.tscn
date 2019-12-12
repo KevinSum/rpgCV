@@ -2,9 +2,9 @@
 
 [ext_resource path="res://assets/Dialogue Box.png" type="Texture" id=1]
 [ext_resource path="res://Dialogue.gd" type="Script" id=2]
-[ext_resource path="res://assets/font.ttf" type="DynamicFontData" id=3]
+[ext_resource path="res://assets/pokemon_pixel_font.ttf" type="DynamicFontData" id=3]
 
-[sub_resource type="DynamicFont" id=6]
+[sub_resource type="DynamicFont" id=1]
 size = 32
 font_data = ExtResource( 3 )
 
@@ -21,7 +21,6 @@ size = 32
 font_data = ExtResource( 3 )
 
 [sub_resource type="DynamicFont" id=5]
-size = 32
 font_data = ExtResource( 3 )
 
 [node name="Dialogue Box" type="NinePatchRect"]
@@ -37,7 +36,7 @@ script = ExtResource( 2 )
 [node name="RichTextLabel" type="RichTextLabel" parent="."]
 margin_right = 32.0
 margin_bottom = 32.0
-custom_fonts/mono_font = SubResource( 6 )
+custom_fonts/mono_font = SubResource( 1 )
 custom_fonts/bold_italics_font = SubResource( 2 )
 custom_fonts/italics_font = SubResource( 3 )
 custom_fonts/bold_font = SubResource( 4 )
