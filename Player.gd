@@ -2,7 +2,7 @@ extends KinematicBody2D
 
 # Contants
 const STEP_SIZE = 16 # size of tiles, so we need how many pixels the player needs to move
-const MOVEMENT_SPEED = 1 # Speed of movement
+const MOVEMENT_SPEED = 2 # Speed of movement
 
 
 # Variables
@@ -78,8 +78,8 @@ func _process(delta):
 				
 		elif canMove:
 			moving = false
-			if sprite.get_frame() % 3  == 0:
-				animationPlayer.stop(true)
+			#if sprite.get_frame() % 3  == 0:
+			animationPlayer.stop(true)
 				
 	interactPressed = false # Ensure bool is only active for one frame
 
