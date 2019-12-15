@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=2]
+[gd_scene load_steps=24 format=2]
 
 [ext_resource path="res://assets/CV Tile map.png" type="Texture" id=1]
 [ext_resource path="res://Sprites.gd" type="Script" id=2]
@@ -6,8 +6,12 @@
 [ext_resource path="res://Player.gd" type="Script" id=4]
 [ext_resource path="res://Label.gd" type="Script" id=5]
 [ext_resource path="res://Dialogue.tscn" type="PackedScene" id=6]
-[ext_resource path="res://assets/Trainer Red.png" type="Texture" id=7]
-[ext_resource path="res://Interact.gd" type="Script" id=8]
+[ext_resource path="res://assets/Voice.wav" type="AudioStream" id=7]
+[ext_resource path="res://assets/Trainer Red.png" type="Texture" id=8]
+[ext_resource path="res://TestSprite.gd" type="Script" id=9]
+[ext_resource path="res://Interact.gd" type="Script" id=10]
+[ext_resource path="res://assets/Do yuo like jazz unmixed.wav" type="AudioStream" id=11]
+[ext_resource path="res://Test.gd" type="Script" id=12]
 
 [sub_resource type="ConvexPolygonShape2D" id=1]
 points = PoolVector2Array( 5.14551, 3.87703, 12.8482, 4.54683, 10.5039, 12.5844, 5.81531, 11.5797 )
@@ -192,22 +196,54 @@ margin_top = 8.0
 margin_right = 480.0
 margin_bottom = 72.0
 
+[node name="VoiceAudio" type="AudioStreamPlayer" parent="Sprites/Player/Camera2D/Dialogue Box"]
+stream = ExtResource( 7 )
+
 [node name="TestSprite" type="Sprite" parent="Sprites"]
 position = Vector2( -32, 0 )
-texture = ExtResource( 7 )
+texture = ExtResource( 8 )
 offset = Vector2( 8, 0 )
 vframes = 4
 hframes = 3
+script = ExtResource( 9 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="Sprites/TestSprite"]
 position = Vector2( 8.58325, 9.0732 )
 
 [node name="Interact" type="Node2D" parent="Sprites/TestSprite/StaticBody2D"]
 position = Vector2( -200.583, -169.073 )
-script = ExtResource( 8 )
-text = [ "Hellooooo", "I'm Kevin" ]
+script = ExtResource( 10 )
+text = [ "Hellooooo. How are you today? :D", "I'm Kevin" ]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Sprites/TestSprite/StaticBody2D"]
+position = Vector2( -1.90735e-006, 9.53674e-007 )
+shape = SubResource( 11 )
+
+[node name="TestSprite2" type="Sprite" parent="Sprites"]
+position = Vector2( 80, 0 )
+texture = ExtResource( 8 )
+offset = Vector2( 8, 0 )
+vframes = 4
+hframes = 3
+script = ExtResource( 9 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Sprites/TestSprite2"]
+position = Vector2( 8.58325, 9.0732 )
+
+[node name="Test" type="AudioStreamPlayer2D" parent="Sprites/TestSprite2/StaticBody2D"]
+position = Vector2( -24.5833, 0 )
+stream = ExtResource( 11 )
+autoplay = true
+max_distance = 100.0
+attenuation = 2.37842
+script = ExtResource( 12 )
+
+[node name="Interact" type="Node2D" parent="Sprites/TestSprite2/StaticBody2D"]
+position = Vector2( -200.583, -169.073 )
+script = ExtResource( 10 )
+text = [ "I'm just here to test the adui" ]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprites/TestSprite2/StaticBody2D"]
 position = Vector2( -1.90735e-006, 9.53674e-007 )
 shape = SubResource( 11 )
 

@@ -12,12 +12,16 @@ var textToPrint = []
 var currentText = 0 # Index indicated which bit of text/which array we're on
 var currentChar = 0 # Which character in the text we're on
 
-const SPEED = 0.1 # Speed to text printing
+var voiceAudio 
+
+const SPEED = 0.01 # Speed to text printing
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	set_physics_process(true)
 	set_process_unhandled_key_input(true) # Allow internal processing
+	voiceAudio = get_node("VoiceAudio")
+
 	
 func _unhandled_key_input(key_event):
 	if key_event.is_action_pressed("ui_interact"):
@@ -37,6 +41,8 @@ func _process(delta):
 				# Append previous text with same text but with another character
 				get_node("RichTextLabel").set_bbcode(get_node("RichTextLabel").get_bbcode() + textToPrint[currentText][currentChar]) 
 				currentChar += 1 # Index for next character
+				if !voiceAudio.playing: # Check is audio file is currently playing
+					voiceAudio.play() # Play voice audio
 			if currentChar >= textToPrint[currentText].length(): # Stop printing when entire text has been printed
 				currentChar = 0 # Start from the first character on the next text we're printing (after the the button is pressed in function below)
 				timer = 0
