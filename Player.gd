@@ -64,22 +64,24 @@ func _process(delta):
 				
 		## INTERACT WITH PEOPLE
 		elif interactPressed: # Interact key
-			if sprite.get_frame() == 0: # Check what frame we're on to get direction we're facing (Up)
+			animationPlayer.seek(0, true) # Reset Animation Player to idle frame
+			animationPlayer.stop(true) # Stop Animation Player
+			if direction == Vector2(0, -1): # Check which direction we're facing (Up)
 				end_pos = player_pos + Vector2(0, 0 - STEP_SIZE) # Find co-ordinates tile we're facing
-			elif sprite.get_frame() == 6: # Down
+			elif direction == Vector2(0, 1): # Down
 				end_pos = player_pos + Vector2(0, 0 + STEP_SIZE)
-			elif sprite.get_frame() == 3: # Left
+			elif direction == Vector2(-1, 0): # Left
 				end_pos = player_pos + Vector2(0 - STEP_SIZE, 0)
-			elif sprite.get_frame() == 9: # Right
+			elif direction == Vector2(1, 0): # Right
 				end_pos = player_pos + Vector2(STEP_SIZE, 0)
 			var dictionary = world.intersect_point(end_pos + Vector2(8, 8)) # Get dictionary of ray query (n.b. offset (8.8) to get to collision area as opposed to corner)
 			if dictionary: # If there is a collision thing in the direction we're facing
 				interact(dictionary)
 				
-		elif canMove:
+		elif canMove: #When not moving, but can move (not interacting)
 			moving = false
-			#if sprite.get_frame() % 3  == 0:
-			animationPlayer.stop(true)
+			animationPlayer.seek (0, true) # Reset Animation Player to idle frame
+			animationPlayer.stop (true) # Stop Animation Player
 				
 	interactPressed = false # Ensure bool is only active for one frame
 
@@ -93,5 +95,15 @@ func interact(dictionary):
 	for d in dictionary: 
 		if typeof(d.collider) == TYPE_OBJECT and d.collider.has_node("Interact"):
 			get_node("Camera2D/Dialogue Box").set_visible(true) # Make dialogue box visible
-			get_node("Camera2D/Dialogue Box")._print_dialogue(d.collider.get_node("Interact").text)
-			
+			get_node("Camera2D/Dialogue Box")._print_dialogue(d.collider.get_node("Interact").text) 
+			# If interacting with sprite, change direction that the sprite is facing
+			var interactedNode = d.collider.get_node("..")
+			if d.collider.has_node("Turn"):
+				if direction == Vector2(0, -1): # Check which direction we're facing (Up)
+					interactedNode.set_frame(0)  # Set frame of the sprite that we're interating with to face us (Face down)
+				elif direction == Vector2(0, 1): # Down
+					interactedNode.set_frame(2) 
+				elif direction == Vector2(-1, 0): # Left
+					interactedNode.set_frame(3) 
+				elif direction == Vector2(1, 0): # Right
+					interactedNode.set_frame(1) 

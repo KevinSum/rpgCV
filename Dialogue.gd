@@ -14,7 +14,8 @@ var currentChar = 0 # Which character in the text we're on
 
 var voiceAudio 
 
-const SPEED = 0.01 # Speed to text printing
+var speed = 0.000001 # Speed to text printing
+var oldSpeed
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -36,11 +37,17 @@ func _process(delta):
 	if printing:
 		if !donePrinting:
 			timer += delta
-			if timer >= SPEED: # Time to print another character
+			if timer >= speed: # Time to print another character
 				timer = 0
-				# Append previous text with same text but with another character
-				get_node("RichTextLabel").set_bbcode(get_node("RichTextLabel").get_bbcode() + textToPrint[currentText][currentChar]) 
-				currentChar += 1 # Index for next character
+				if pressed and !currentChar == 0: # If user presses in the middle of dialogue, print rest of text. Make sure isn't the initial button press to initiate the dialogue
+					while currentChar != textToPrint[currentText].length(): # Loop until entire text is printed
+						# Keep appending previous text with same text but with next character
+						get_node("RichTextLabel").set_bbcode(get_node("RichTextLabel").get_bbcode() + textToPrint[currentText][currentChar])
+						currentChar += 1 # Index for next character
+				else: # Otherise print one character every frame
+					# Append previous text with same text but with next character
+					get_node("RichTextLabel").set_bbcode(get_node("RichTextLabel").get_bbcode() + textToPrint[currentText][currentChar]) 
+					currentChar += 1 # Index for next character
 				if !voiceAudio.playing: # Check is audio file is currently playing
 					voiceAudio.play() # Play voice audio
 			if currentChar >= textToPrint[currentText].length(): # Stop printing when entire text has been printed

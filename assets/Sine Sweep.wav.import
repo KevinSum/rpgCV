@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Sine Sweep.wav-2e8296fcdb496f71a5297d31b3d7dd4d.sample"
+
+[deps]
+
+source_file="res://assets/Sine Sweep.wav"
+dest_files=[ "res://.import/Sine Sweep.wav-2e8296fcdb496f71a5297d31b3d7dd4d.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0
