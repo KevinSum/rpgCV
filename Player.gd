@@ -12,6 +12,7 @@ var direction = Vector2() # Direction of movement
 var world # World
 var animationPlayer
 var sprite
+var footstep
 
 var player_vel = Vector2() # Current velocity of player
 var moving = false  # Check if already moving
@@ -24,6 +25,7 @@ func _ready():
 	set_process_input(true)
 	animationPlayer = get_node("AnimationPlayer")
 	sprite = get_node("PlayerSprite")
+	footstep = get_node("Footstep Sound")
 	
 func _input(event):
 	if event.is_action_pressed("ui_interact"):
@@ -86,6 +88,8 @@ func _process(delta):
 	interactPressed = false # Ensure bool is only active for one frame
 
 	if moving:
+		if sprite.frame % 4 == 2 and !footstep.is_playing(): # Play footstep sound on "step" frame
+			footstep.play()
 		move_and_collide(direction * MOVEMENT_SPEED) # Move player a little every frame
 		player_pos = get_global_position() # Check current position	
 		if player_pos == end_pos: # Stop if goal position has been reached

@@ -19,7 +19,7 @@ func setZpos(node):
 			var sprite_pos = N.get_global_position()
 			var player_node = get_node("Player")
 			var player_pos = player_node.get_global_position()
-			if sprite_pos.y > player_pos.y:
+			if sprite_pos.y > player_pos.y: # Note: Some sprites shouldn't change Z pos
 				N.set_z_index(2)
 			else:
 				N.set_z_index(0)
