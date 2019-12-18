@@ -610,7 +610,7 @@ position = Vector2( -200.583, -169.073 )
 visible = false
 position = Vector2( -200.583, -169.073 )
 script = ExtResource( 12 )
-text = [ "I'm currently studying Electronic Engineering with Music Technology Systems at the university of York!", "I'm currently finishing up my final year of studying and am currently averaging a 2:1.", "The degree is a essentially an Electronic Engineering degree in the context of audio technology.", "Some of the modules I've taken include...", "Introduction of Signal Processing, Audio Algorithm Design and Implementation, Virtual Acoustics and Spatial Audio, Biologically Inspired Computation...", "iOS Audio Programming, Voice Production and Synthesis, Interfaces for Audio Interaction, Analogue and Digital Filters... ", "And plenty of other interesting topics!" ]
+text = [ "I'm currently studying Electronic Engineering with Music Technology Systems at the university of York!", "I'm currently finishing up my final year of studying and am currently averaging a 2:1.", "The degree is a essentially an Electronic Engineering degree in the context of audio technology.", "Some of the modules I've taken include...", "Introduction to Signal Processing, Audio Algorithm Design and Implementation, Virtual Acoustics and Spatial Audio, Biologically Inspired Computation...", "iOS Audio Programming, Voice Production and Synthesis, Interfaces for Audio Interaction, Analogue and Digital Filters... ", "And plenty of other interesting topics!" ]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Sprites/Uni/StaticBody2D"]
 position = Vector2( -1.90735e-006, 0 )
