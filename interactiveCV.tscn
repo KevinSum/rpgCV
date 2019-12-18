@@ -712,7 +712,6 @@ position = Vector2( -1.90735e-006, 0 )
 shape = SubResource( 23 )
 
 [node name="Schoeps" type="Sprite" parent="Sprites"]
-editor/display_folded = true
 position = Vector2( 464, -64 )
 texture = ExtResource( 18 )
 offset = Vector2( 8, 0 )
@@ -731,7 +730,7 @@ position = Vector2( -296.583, -153.073 )
 visible = false
 position = Vector2( -200.583, -169.073 )
 script = ExtResource( 12 )
-text = [ "For my placement year in 2018-19, I interned at SCHOEPS Microfone as a Research and Developement intern!", "There I worked on all sorts of audio engineering projects for research and development as well as for marketing.", "The placement was also in Germany, so I picked up a little bit of German!", "... Though I'm still quite bad. But I can order food really well!" ]
+text = [ "For my placement year in 2018-19, I interned at SCHOEPS Microfone as a Research and Development intern!", "There I worked on all sorts of audio engineering projects for research and development as well as for marketing.", "The placement was also in Germany, so I picked up a little bit of German!", "... Though I'm still quite bad. But I can order food really well!" ]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Sprites/Schoeps/StaticBody2D"]
 position = Vector2( -1.90735e-006, 0 )
@@ -793,7 +792,6 @@ position = Vector2( -1.90735e-006, 0 )
 shape = SubResource( 23 )
 
 [node name="Measure Sys NPC" type="Sprite" parent="Sprites"]
-editor/display_folded = true
 position = Vector2( 480, -128 )
 texture = ExtResource( 18 )
 offset = Vector2( 8, 0 )
@@ -813,7 +811,7 @@ position = Vector2( -296.583, -153.073 )
 visible = false
 position = Vector2( -200.583, -169.073 )
 script = ExtResource( 12 )
-text = [ "One of the projects I worked on at Schoeps is their in-house microphone measurement system!", "This is used for measuring frequency responces and polar patterns of development mics.", "I developed the motor system to accurately turn the mic to specfic angles, at which point the system can get take a sine sweep recordings at that angle using the mic being measured.", "I also contributed to the accompanying MATLAB app, which applies digital signal processing to the recorded sine sweep to generate the frequency responces and polar patterns." ]
+text = [ "One of the projects I worked on at Schoeps was their in-house microphone measurement system!", "This was used for measuring frequency responces and polar patterns of development mics.", "I developed the motor system to accurately turn the mic to specfic angles, at which point the system can get take a sine sweep recordings at that angle using the mic being measured.", "I also contributed to the accompanying MATLAB app, which applied digital signal processing to the recorded sine sweep to generate the frequency responces and polar patterns." ]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Sprites/Measure Sys NPC/StaticBody2D"]
 position = Vector2( -1.90735e-006, 0 )
@@ -1144,7 +1142,6 @@ position = Vector2( -1.90735e-006, 0 )
 shape = SubResource( 23 )
 
 [node name="Audio programming" type="Sprite" parent="Sprites"]
-editor/display_folded = true
 position = Vector2( 944, -96 )
 z_index = 1
 texture = ExtResource( 17 )
@@ -1164,7 +1161,7 @@ position = Vector2( -296.583, -153.073 )
 visible = false
 position = Vector2( -552.583, -281.073 )
 script = ExtResource( 12 )
-text = [ "I've done a fair amount of audio application and plugin development over the years!", "I'm quite familiar with the JUCE C++ framework, and have experience with digital signal processing and GUI development.", "I actually won the bronze award in the MATLAB Audio Plugin Competition in 2018. I was invited to the AES convention in New York to present my plugin made with the MATLAB Audio Toolbox!", "Let me tell you, that was really nerve wracking!", "I'm also no stranger to visual languages for audio, having used Pure Data and Max MSP a lot over the years." ]
+text = [ "I've done a fair amount of audio application and plugin development over the years!", "I'm quite familiar with the JUCE C++ framework, and have experience with digital signal processing and GUI development.", "I actually won the bronze award in the MATLAB Audio Plugin Student Competition in 2018. I was invited to the AES convention in New York to present my plugin made with the MATLAB Audio Toolbox!", "Let me tell you, that was really nerve wracking!", "I'm also no stranger to visual languages for audio, having used Pure Data and Max MSP a lot over the years." ]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Sprites/Audio programming/StaticBody2D"]
 position = Vector2( -1.90735e-006, 0 )
