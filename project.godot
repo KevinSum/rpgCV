@@ -17,7 +17,7 @@ _global_script_class_icons={
 
 config/name="CV"
 run/main_scene="res://interactiveCV.tscn"
-config/icon="res://icon.png"
+config/icon="res://assets/Icon.png"
 
 [display]
 
