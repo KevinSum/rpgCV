@@ -87,7 +87,7 @@ z_as_relative = false
 texture = ExtResource( 1 )
 vframes = 6
 hframes = 6
-frame = 7
+frame = 3
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2( 8, 8 )
@@ -101,4 +101,4 @@ anims/up = SubResource( 5 )
 
 [node name="Footstep Sound" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 2 )
-volume_db = -16.448
+volume_db = -30.0

@@ -1473,7 +1473,6 @@ script = ExtResource( 12 )
 text = [ "A basketball hoop." ]
 
 [node name="Thank youu!" type="Sprite" parent="Sprites"]
-editor/display_folded = true
 position = Vector2( 1392, -16 )
 texture = ExtResource( 10 )
 offset = Vector2( 8, 0 )
@@ -1492,7 +1491,7 @@ position = Vector2( -24.583, -233.073 )
 visible = false
 position = Vector2( -200.583, -169.073 )
 script = ExtResource( 12 )
-text = [ "Wow you made it to the end! I hope you've learnt a bit about me and what I'm potentially capable of!", "If you need to contact me, please email me at kevinsum.turtle@gmail.com!" ]
+text = [ "Wow you made it to the end! I hope you've learnt a bit about me and what I'm potentially capable of!", "If you need to contact me, please email me at kkss501@york.ac.uk." ]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Sprites/Thank youu!/StaticBody2D"]
 position = Vector2( -1.90735e-006, 0 )
