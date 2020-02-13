@@ -587,7 +587,7 @@ script = ExtResource( 12 )
 text = [ "Hi there! Welcome to my little interactive CV!", "Please feel free to roam around and talk to people to learn a bit about myself." ]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Sprites/Guide/StaticBody2D"]
-position = Vector2( -1.90735e-006, 0 )
+position = Vector2( -1.90735e-06, 0 )
 shape = SubResource( 23 )
 
 [node name="Uni" type="Sprite" parent="Sprites"]
@@ -613,7 +613,7 @@ script = ExtResource( 12 )
 text = [ "I'm currently studying Electronic Engineering with Music Technology Systems at the university of York!", "I'm currently finishing up my final year of studying and am currently averaging a 2:1.", "The degree is a essentially an Electronic Engineering degree in the context of audio technology.", "Some of the modules I've taken include...", "Introduction to Signal Processing, Audio Algorithm Design and Implementation, Virtual Acoustics and Spatial Audio, Biologically Inspired Computation...", "iOS Audio Programming, Voice Production and Synthesis, Interfaces for Audio Interaction, Analogue and Digital Filters... ", "And plenty of other interesting topics!" ]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Sprites/Uni/StaticBody2D"]
-position = Vector2( -1.90735e-006, 0 )
+position = Vector2( -1.90735e-06, 0 )
 shape = SubResource( 23 )
 
 [node name="KES" type="Sprite" parent="Sprites"]
@@ -632,14 +632,14 @@ position = Vector2( 8.58325, 9.0732 )
 visible = false
 position = Vector2( -200.583, -169.073 )
 script = ExtResource( 12 )
-text = [ "Before university, I went to King Edward's School!", "There I undertook the IB and achieved a score of 31 points, with scores of 5, 5 and 4 in Higher Level Physics, Chemisty and Maths respectively.", "I also achieved 6 A*s at GCSE in Maths, Physics, Chemistry, Biology, Design Technology and Chinese. ", "Wow that was so long ago." ]
+text = [ "Before university, I went to King Edward's School!", "There I undertook the IB and achieved a score of 31 points, with scores of 5, 5 and 4 in Higher Level Physics, Chemisty and Maths respectively.", "I also achieved 6 A*s at GCSE in Maths, Physics, Chemistry, Biology, Design Technology and Chinese. " ]
 
 [node name="Turn" type="Node2D" parent="Sprites/KES/StaticBody2D"]
 visible = false
 position = Vector2( -248.583, -185.073 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Sprites/KES/StaticBody2D"]
-position = Vector2( -1.90735e-006, 0 )
+position = Vector2( -1.90735e-06, 0 )
 shape = SubResource( 23 )
 
 [node name="Student" type="Sprite" parent="Sprites"]
@@ -666,7 +666,7 @@ script = ExtResource( 12 )
 text = [ "I don't think this teacher is very good..." ]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Sprites/Student/StaticBody2D"]
-position = Vector2( -1.90735e-006, 0 )
+position = Vector2( -1.90735e-06, 0 )
 shape = SubResource( 23 )
 
 [node name="Whiteboard" type="Sprite" parent="Sprites"]
@@ -708,7 +708,7 @@ script = ExtResource( 12 )
 text = [ "Okay kids, today we're learning how to add!" ]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Sprites/Teacher/StaticBody2D"]
-position = Vector2( -1.90735e-006, 0 )
+position = Vector2( -1.90735e-06, 0 )
 shape = SubResource( 23 )
 
 [node name="Schoeps" type="Sprite" parent="Sprites"]
@@ -733,7 +733,7 @@ script = ExtResource( 12 )
 text = [ "For my placement year in 2018-19, I interned at SCHOEPS Microfone as a Research and Development intern!", "There I worked on all sorts of audio engineering projects for research and development as well as for marketing.", "The placement was also in Germany, so I picked up a little bit of German!", "... Though I'm still quite bad. But I can order food really well!" ]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Sprites/Schoeps/StaticBody2D"]
-position = Vector2( -1.90735e-006, 0 )
+position = Vector2( -1.90735e-06, 0 )
 shape = SubResource( 23 )
 
 [node name="Mic" type="Sprite" parent="Sprites"]
@@ -760,7 +760,7 @@ script = ExtResource( 12 )
 text = [ "A microphone on a pole. There seems to be a motor turning it after every sine sweep from the speaker." ]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Sprites/Mic/StaticBody2D"]
-position = Vector2( -1.90735e-006, 0 )
+position = Vector2( -1.90735e-06, 0 )
 shape = SubResource( 23 )
 
 [node name="Measurement Sys Speaker" type="Sprite" parent="Sprites"]
@@ -788,7 +788,7 @@ script = ExtResource( 12 )
 text = [ "A speaker. It seems to be playing a sine sweep periodically." ]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Sprites/Measurement Sys Speaker/StaticBody2D"]
-position = Vector2( -1.90735e-006, 0 )
+position = Vector2( -1.90735e-06, 0 )
 shape = SubResource( 23 )
 
 [node name="Measure Sys NPC" type="Sprite" parent="Sprites"]
@@ -814,7 +814,7 @@ script = ExtResource( 12 )
 text = [ "One of the projects I worked on at Schoeps was their in-house microphone measurement system!", "This was used for measuring frequency responces and polar patterns of development mics.", "I developed the motor system to accurately turn the mic to specfic angles, at which point the system can get take a sine sweep recordings at that angle using the mic being measured.", "I also contributed to the accompanying MATLAB app, which applied digital signal processing to the recorded sine sweep to generate the frequency responces and polar patterns." ]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Sprites/Measure Sys NPC/StaticBody2D"]
-position = Vector2( -1.90735e-006, 0 )
+position = Vector2( -1.90735e-06, 0 )
 shape = SubResource( 23 )
 
 [node name="Listening Test" type="Sprite" parent="Sprites"]
@@ -841,7 +841,7 @@ script = ExtResource( 12 )
 text = [ "What's that? What are these blue things I'm holding in my hands?", "They're microphones of course!", "Part of my job at SCHOEPS was to perform listening tests to compare development microphones with competitor microphones.", "This was done either casually by myself, or more formally by conducting blind tests with a mix of both experienced and inexperienced listeners." ]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Sprites/Listening Test/StaticBody2D"]
-position = Vector2( -1.90735e-006, 0 )
+position = Vector2( -1.90735e-06, 0 )
 shape = SubResource( 23 )
 
 [node name="ORTF-3D Object" type="Sprite" parent="Sprites"]
@@ -892,7 +892,7 @@ script = ExtResource( 12 )
 text = [ "The ORTF-3D is SCHOEPS' approach to spatial microphone arrays and is something I became very familiar with during my internship!", "I also designed a live demo of the ORTF-3D to use at pro-audio conventions, where you can listen through the ORTF-3D in real-time at a convention booth.", "This involved implementing a headtracker using an Arduino to rotate the soundfield in real time, binauralising the 3D soundfield to be listenable on headphones, designing the physical rig to use at conventions, and preparing the audio walkthrough for visitors to listen to. " ]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Sprites/ORTF-3D NPC/StaticBody2D"]
-position = Vector2( -1.90735e-006, 0 )
+position = Vector2( -1.90735e-06, 0 )
 shape = SubResource( 23 )
 
 [node name="Max-MSP patch" type="Sprite" parent="Sprites"]
@@ -919,7 +919,7 @@ script = ExtResource( 12 )
 text = [ "I got to do some audio plugin work! I helped develop the SCHOEPS audio plugins in JUCE.", "I also designed a Max MSP patch to showcase the audio plugins at pro-audio conventions in an intuitive manner.", "That way, booth visitors didn't have to deal with using a DAW that they're potentially not used to." ]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Sprites/Max-MSP patch/StaticBody2D"]
-position = Vector2( -1.90735e-006, 0 )
+position = Vector2( -1.90735e-06, 0 )
 shape = SubResource( 23 )
 
 [node name="Camera boi" type="Sprite" parent="Sprites"]
@@ -945,7 +945,7 @@ script = ExtResource( 12 )
 text = [ "For marketing, I filmed and edited promotional and tutorial videos to showcase new products." ]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Sprites/Camera boi/StaticBody2D"]
-position = Vector2( -1.90735e-006, 0 )
+position = Vector2( -1.90735e-06, 0 )
 shape = SubResource( 23 )
 
 [node name="The Talent" type="Sprite" parent="Sprites"]
@@ -972,7 +972,7 @@ script = ExtResource( 12 )
 text = [ "Hey! We're filming here! Get out the way!" ]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Sprites/The Talent/StaticBody2D"]
-position = Vector2( -1.90735e-006, 0 )
+position = Vector2( -1.90735e-06, 0 )
 shape = SubResource( 23 )
 
 [node name="Camera" type="Sprite" parent="Sprites"]
@@ -1018,7 +1018,7 @@ script = ExtResource( 12 )
 text = [ "I did some research on virtual microphones too! ", "Specficically, I did research on the the quality of virtual microphones created using microphone arrays compared to real microphones." ]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Sprites/Virtual Mic/StaticBody2D"]
-position = Vector2( -1.90735e-006, 0 )
+position = Vector2( -1.90735e-06, 0 )
 shape = SubResource( 23 )
 
 [node name="YCSAA" type="Sprite" parent="Sprites"]
@@ -1045,7 +1045,7 @@ script = ExtResource( 12 )
 text = [ "As part of the YCCSA program in the summer of 2017, I got to do a research internship at the Electronic Engineering Department Audio Lab at the University of York!", "I researched whether singing in virtual reality would have the same psychological benefits as singing in real life.", "This involved working with an assigned partner, designing an experiment protocol to follow when performing our experiment with participants, adapting a Unity and Max MSP project for our experiment, taking EEG, larynx, skin conductance and heart rate data, and presenting our research." ]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Sprites/YCSAA/StaticBody2D"]
-position = Vector2( -1.90735e-006, 0 )
+position = Vector2( -1.90735e-06, 0 )
 shape = SubResource( 23 )
 
 [node name="VR participant" type="Sprite" parent="Sprites"]
@@ -1065,7 +1065,7 @@ script = ExtResource( 12 )
 text = [ "Oh wow! It's like I'm actually singing with real people!" ]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Sprites/VR participant/StaticBody2D"]
-position = Vector2( -1.90735e-006, 0 )
+position = Vector2( -1.90735e-06, 0 )
 shape = SubResource( 23 )
 
 [node name="Speaker" type="Sprite" parent="Sprites"]
@@ -1085,7 +1085,7 @@ script = ExtResource( 12 )
 text = [ "A speaker." ]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Sprites/Speaker/StaticBody2D"]
-position = Vector2( -1.90735e-006, 0 )
+position = Vector2( -1.90735e-06, 0 )
 shape = SubResource( 23 )
 
 [node name="Programming" type="Sprite" parent="Sprites"]
@@ -1111,7 +1111,7 @@ script = ExtResource( 12 )
 text = [ "I can program in a variety of languages! Including C, C++, Matlab, Java and Javascript." ]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Sprites/Programming/StaticBody2D"]
-position = Vector2( -1.90735e-006, 0 )
+position = Vector2( -1.90735e-06, 0 )
 shape = SubResource( 23 )
 
 [node name="Spatial Audio" type="Sprite" parent="Sprites"]
@@ -1138,7 +1138,7 @@ script = ExtResource( 12 )
 text = [ "I have a lot of experience in spatial audio!", "Having done a lot of work with the topic during my internships, I'm very comfortable with topics like ambisonics, HRTFs and binauralisation.", "I'm actually currently researching the effects of personalised HRTFs compared to generic HRTF's on gaming for my final year project!" ]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Sprites/Spatial Audio/StaticBody2D"]
-position = Vector2( -1.90735e-006, 0 )
+position = Vector2( -1.90735e-06, 0 )
 shape = SubResource( 23 )
 
 [node name="Audio programming" type="Sprite" parent="Sprites"]
@@ -1164,7 +1164,7 @@ script = ExtResource( 12 )
 text = [ "I've done a fair amount of audio application and plugin development over the years!", "I'm quite familiar with the JUCE C++ framework, and have experience with digital signal processing and GUI development.", "I actually won the bronze award in the MATLAB Audio Plugin Student Competition in 2018. I was invited to the AES convention in New York to present my plugin made with the MATLAB Audio Toolbox!", "Let me tell you, that was really nerve wracking!", "I'm also no stranger to visual languages for audio, having used Pure Data and Max MSP a lot over the years." ]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Sprites/Audio programming/StaticBody2D"]
-position = Vector2( -1.90735e-006, 0 )
+position = Vector2( -1.90735e-06, 0 )
 shape = SubResource( 23 )
 
 [node name="Languages" type="Sprite" parent="Sprites"]
@@ -1191,7 +1191,7 @@ script = ExtResource( 12 )
 text = [ "I can speak a few extra languages! Although quite badly!", "I spent a year in Germany for my placement, so I picked up enough to get by!", "I'm also ethinically Chinese, so I grew up hearing Cantonese and Mandarin a lot.", "Though I can only just about understand it! Speaking it is a bit harder, and I absolutely cannot read it!" ]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Sprites/Languages/StaticBody2D"]
-position = Vector2( -1.90735e-006, 0 )
+position = Vector2( -1.90735e-06, 0 )
 shape = SubResource( 23 )
 
 [node name="Game Dev" type="Sprite" parent="Sprites"]
@@ -1219,7 +1219,7 @@ script = ExtResource( 12 )
 text = [ "I've done some game development! You're in fact playing a game that I made!", "I have experience in game engines Godot and Unity.", "I also have some basic knowledge of audio middleware engines. The two I'm familiar with are Wwise and FMOD.", "I'm also a member of the Game Development Society at the University of York, where I attend talks on game development and participant in game jams.", "I've also given talks on music production and sound design at this society!" ]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Sprites/Game Dev/StaticBody2D"]
-position = Vector2( -1.90735e-006, 0 )
+position = Vector2( -1.90735e-06, 0 )
 shape = SubResource( 23 )
 
 [node name="PC" type="Sprite" parent="Sprites"]
@@ -1234,7 +1234,7 @@ script = ExtResource( 11 )
 position = Vector2( 8.58325, 9.0732 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Sprites/PC/StaticBody2D"]
-position = Vector2( -2.86102e-006, 6.9268 )
+position = Vector2( -2.86102e-06, 6.9268 )
 shape = SubResource( 29 )
 
 [node name="Interact" type="Node2D" parent="Sprites/PC/StaticBody2D"]
@@ -1293,7 +1293,7 @@ script = ExtResource( 12 )
 text = [ "I do A LOT of music production in my spare time. So I know my way around DAWs, recording techniques and mixing concepts.", "I actually have a little YouTube Channel where I regularly post music covers! ", "I have a very modest 1000 subscribers and have a total of 440,000 views across all my videos." ]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Sprites/Music/StaticBody2D"]
-position = Vector2( -1.90735e-006, 0 )
+position = Vector2( -1.90735e-06, 0 )
 shape = SubResource( 23 )
 
 [node name="AnimeSoc Chair" type="Sprite" parent="Sprites"]
@@ -1323,7 +1323,7 @@ script = ExtResource( 12 )
 text = [ "I'm a big anime nerd! And I was the president of the University of York Anime Society in 2017/18 and 2019/20!", "I organised weekly meetings and socials, communicated with the student union, liased with other commitee members, wrote the weekly email, and generally tried to make sure that every member felt welcome and enjoyed their time at university!" ]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Sprites/AnimeSoc Chair/StaticBody2D"]
-position = Vector2( -1.90735e-006, 0 )
+position = Vector2( -1.90735e-06, 0 )
 shape = SubResource( 23 )
 
 [node name="Shynn" type="Sprite" parent="Sprites"]
@@ -1350,7 +1350,7 @@ script = ExtResource( 12 )
 text = [ "Wow the animation in this show is so bad..." ]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Sprites/Shynn/StaticBody2D"]
-position = Vector2( -1.90735e-006, 0 )
+position = Vector2( -1.90735e-06, 0 )
 shape = SubResource( 23 )
 
 [node name="Basketball" type="Sprite" parent="Sprites"]
@@ -1381,7 +1381,7 @@ script = ExtResource( 12 )
 text = [ "I like to play basketball! I'm a competing member of the Vanburgh College basketball team at the University of York!", "Though I'm a bit short, I'm super fast and can shoot really well!" ]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Sprites/Basketball/StaticBody2D"]
-position = Vector2( -1.90735e-006, 0 )
+position = Vector2( -1.90735e-06, 0 )
 shape = SubResource( 23 )
 
 [node name="Kawhi" type="Sprite" parent="Sprites"]
@@ -1404,10 +1404,10 @@ position = Vector2( 8.58325, 9.0732 )
 visible = false
 position = Vector2( -552.583, -281.073 )
 script = ExtResource( 12 )
-text = [ "...He's just standing there dribbling...", "Shoot the ball already!" ]
+text = [ "...He's just standing there dribbling..." ]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Sprites/Kawhi/StaticBody2D"]
-position = Vector2( -1.90735e-006, 0 )
+position = Vector2( -1.90735e-06, 0 )
 shape = SubResource( 23 )
 
 [node name="Kyrie" type="Sprite" parent="Sprites"]
@@ -1444,7 +1444,7 @@ script = ExtResource( 12 )
 text = [ "..." ]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Sprites/Kyrie/StaticBody2D"]
-position = Vector2( -1.90735e-006, 0 )
+position = Vector2( -1.90735e-06, 0 )
 shape = SubResource( 23 )
 
 [node name="Hoop" type="Sprite" parent="Sprites"]
@@ -1491,7 +1491,7 @@ script = ExtResource( 12 )
 text = [ "Wow you made it to the end! I hope you've learnt a bit about me and what I'm potentially capable of!", "If you need to contact me, please email me at kkss501@york.ac.uk." ]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Sprites/Thank youu!/StaticBody2D"]
-position = Vector2( -1.90735e-006, 0 )
+position = Vector2( -1.90735e-06, 0 )
 shape = SubResource( 23 )
 
 [node name="Ray and Robin" type="Sprite" parent="Sprites"]
@@ -1517,7 +1517,7 @@ script = ExtResource( 12 )
 text = [ "I also want to thank my friends Ray for helping with the sprite art, and Robin for helping with the game design!" ]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Sprites/Ray and Robin/StaticBody2D"]
-position = Vector2( -1.90735e-006, 0 )
+position = Vector2( -1.90735e-06, 0 )
 shape = SubResource( 23 )
 
 [editable path="Sprites/Player/Camera2D/Dialogue Box"]
