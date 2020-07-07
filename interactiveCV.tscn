@@ -108,6 +108,10 @@ points = PoolVector2Array( 0, 0, 80, 0, 80, 16, 0, 16 )
 0/tile_mode = 0
 0/occluder_offset = Vector2( 0, 0 )
 0/navigation_offset = Vector2( 0, 0 )
+0/shape_offset = Vector2( 0, 0 )
+0/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+0/shape_one_way = false
+0/shape_one_way_margin = 0.0
 0/shapes = [  ]
 0/z_index = 0
 1/name = "CV Tile map.png 1"
@@ -121,9 +125,14 @@ points = PoolVector2Array( 0, 0, 80, 0, 80, 16, 0, 16 )
 1/autotile/spacing = 0
 1/autotile/occluder_map = [  ]
 1/autotile/navpoly_map = [  ]
+1/autotile/priority_map = [  ]
 1/autotile/z_index_map = [  ]
 1/occluder_offset = Vector2( 0, 0 )
 1/navigation_offset = Vector2( 0, 0 )
+1/shape_offset = Vector2( 0, 0 )
+1/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+1/shape_one_way = false
+1/shape_one_way_margin = 0.0
 1/shapes = [  ]
 1/z_index = 0
 2/name = "CV Tile map.png 2"
@@ -137,9 +146,15 @@ points = PoolVector2Array( 0, 0, 80, 0, 80, 16, 0, 16 )
 2/autotile/spacing = 0
 2/autotile/occluder_map = [  ]
 2/autotile/navpoly_map = [  ]
+2/autotile/priority_map = [  ]
 2/autotile/z_index_map = [  ]
 2/occluder_offset = Vector2( 0, 0 )
 2/navigation_offset = Vector2( 0, 0 )
+2/shape_offset = Vector2( 0, 0 )
+2/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+2/shape = SubResource( 4 )
+2/shape_one_way = false
+2/shape_one_way_margin = 1.0
 2/shapes = [ {
 "autotile_coord": Vector2( 1, 1 ),
 "one_way": false,
@@ -240,6 +255,10 @@ points = PoolVector2Array( 0, 0, 80, 0, 80, 16, 0, 16 )
 3/tile_mode = 0
 3/occluder_offset = Vector2( 0, 0 )
 3/navigation_offset = Vector2( 0, 0 )
+3/shape_offset = Vector2( 0, 0 )
+3/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+3/shape_one_way = false
+3/shape_one_way_margin = 0.0
 3/shapes = [  ]
 3/z_index = 0
 4/name = "Work Exp"
@@ -250,6 +269,10 @@ points = PoolVector2Array( 0, 0, 80, 0, 80, 16, 0, 16 )
 4/tile_mode = 0
 4/occluder_offset = Vector2( 0, 0 )
 4/navigation_offset = Vector2( 0, 0 )
+4/shape_offset = Vector2( 0, 0 )
+4/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+4/shape_one_way = false
+4/shape_one_way_margin = 0.0
 4/shapes = [  ]
 4/z_index = 0
 5/name = "Education"
@@ -260,6 +283,10 @@ points = PoolVector2Array( 0, 0, 80, 0, 80, 16, 0, 16 )
 5/tile_mode = 0
 5/occluder_offset = Vector2( 0, 0 )
 5/navigation_offset = Vector2( 0, 0 )
+5/shape_offset = Vector2( 0, 0 )
+5/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+5/shape_one_way = false
+5/shape_one_way_margin = 0.0
 5/shapes = [  ]
 5/z_index = 0
 6/name = "Skills"
@@ -270,6 +297,10 @@ points = PoolVector2Array( 0, 0, 80, 0, 80, 16, 0, 16 )
 6/tile_mode = 0
 6/occluder_offset = Vector2( 0, 0 )
 6/navigation_offset = Vector2( 0, 0 )
+6/shape_offset = Vector2( 0, 0 )
+6/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+6/shape_one_way = false
+6/shape_one_way_margin = 0.0
 6/shapes = [  ]
 6/z_index = 0
 7/name = "Controls Collision"
@@ -280,6 +311,11 @@ points = PoolVector2Array( 0, 0, 80, 0, 80, 16, 0, 16 )
 7/tile_mode = 0
 7/occluder_offset = Vector2( 0, 0 )
 7/navigation_offset = Vector2( 0, 0 )
+7/shape_offset = Vector2( 0, 0 )
+7/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+7/shape = SubResource( 19 )
+7/shape_one_way = false
+7/shape_one_way_margin = 1.0
 7/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
@@ -296,6 +332,11 @@ points = PoolVector2Array( 0, 0, 80, 0, 80, 16, 0, 16 )
 8/tile_mode = 0
 8/occluder_offset = Vector2( 0, 0 )
 8/navigation_offset = Vector2( 0, 0 )
+8/shape_offset = Vector2( 0, 0 )
+8/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+8/shape = SubResource( 20 )
+8/shape_one_way = false
+8/shape_one_way_margin = 1.0
 8/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
@@ -312,6 +353,11 @@ points = PoolVector2Array( 0, 0, 80, 0, 80, 16, 0, 16 )
 9/tile_mode = 0
 9/occluder_offset = Vector2( 0, 0 )
 9/navigation_offset = Vector2( 0, 0 )
+9/shape_offset = Vector2( 0, 0 )
+9/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+9/shape = SubResource( 21 )
+9/shape_one_way = false
+9/shape_one_way_margin = 1.0
 9/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
@@ -328,6 +374,11 @@ points = PoolVector2Array( 0, 0, 80, 0, 80, 16, 0, 16 )
 10/tile_mode = 0
 10/occluder_offset = Vector2( 0, 0 )
 10/navigation_offset = Vector2( 0, 0 )
+10/shape_offset = Vector2( 0, 0 )
+10/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+10/shape = SubResource( 1 )
+10/shape_one_way = false
+10/shape_one_way_margin = 1.0
 10/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
@@ -344,6 +395,10 @@ points = PoolVector2Array( 0, 0, 80, 0, 80, 16, 0, 16 )
 11/tile_mode = 0
 11/occluder_offset = Vector2( 0, 0 )
 11/navigation_offset = Vector2( 0, 0 )
+11/shape_offset = Vector2( 0, 0 )
+11/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+11/shape_one_way = false
+11/shape_one_way_margin = 0.0
 11/shapes = [  ]
 11/z_index = 0
 12/name = "Misc Collision"
@@ -354,6 +409,11 @@ points = PoolVector2Array( 0, 0, 80, 0, 80, 16, 0, 16 )
 12/tile_mode = 0
 12/occluder_offset = Vector2( 0, 0 )
 12/navigation_offset = Vector2( 0, 0 )
+12/shape_offset = Vector2( 0, 0 )
+12/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+12/shape = SubResource( 2 )
+12/shape_one_way = false
+12/shape_one_way_margin = 1.0
 12/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
@@ -370,6 +430,11 @@ points = PoolVector2Array( 0, 0, 80, 0, 80, 16, 0, 16 )
 13/tile_mode = 0
 13/occluder_offset = Vector2( 0, 0 )
 13/navigation_offset = Vector2( 0, 0 )
+13/shape_offset = Vector2( 0, 0 )
+13/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+13/shape = SubResource( 3 )
+13/shape_one_way = false
+13/shape_one_way_margin = 1.0
 13/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
@@ -565,7 +630,6 @@ margin_bottom = 72.0
 stream = ExtResource( 9 )
 
 [node name="Guide" type="Sprite" parent="Sprites"]
-editor/display_folded = true
 position = Vector2( 144, -32 )
 texture = ExtResource( 10 )
 offset = Vector2( 8, 0 )
@@ -610,7 +674,7 @@ position = Vector2( -200.583, -169.073 )
 visible = false
 position = Vector2( -200.583, -169.073 )
 script = ExtResource( 12 )
-text = [ "I'm currently studying Electronic Engineering with Music Technology Systems at the university of York!", "I'm currently finishing up my final year of studying and am currently averaging a 2:1.", "The degree is a essentially an Electronic Engineering degree in the context of audio technology.", "Some of the modules I've taken include...", "Introduction to Signal Processing, Audio Algorithm Design and Implementation, Virtual Acoustics and Spatial Audio, Biologically Inspired Computation...", "iOS Audio Programming, Voice Production and Synthesis, Interfaces for Audio Interaction, Analogue and Digital Filters... ", "And plenty of other interesting topics!" ]
+text = [ "I studied Electronic Engineering with Music Technology Systems at the University of York!", "I just finished my final year of studying and will be graduating with First Class Honours!", "The degree is essentially an Electronic Engineering degree in the context of audio technology.", "Some of the modules I've taken include...", "Introduction to Signal Processing, Audio Algorithm Design and Implementation, Virtual Acoustics and Spatial Audio, Biologically Inspired Computation...", "iOS Audio Programming, Voice Production and Synthesis, Interfaces for Audio Interaction, Analogue and Digital Filters... ", "And plenty of other interesting topics!" ]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Sprites/Uni/StaticBody2D"]
 position = Vector2( -1.90735e-06, 0 )
@@ -643,7 +707,6 @@ position = Vector2( -1.90735e-06, 0 )
 shape = SubResource( 23 )
 
 [node name="Student" type="Sprite" parent="Sprites"]
-editor/display_folded = true
 position = Vector2( 368, -112 )
 texture = ExtResource( 15 )
 offset = Vector2( 8, 0 )
@@ -670,7 +733,6 @@ position = Vector2( -1.90735e-06, 0 )
 shape = SubResource( 23 )
 
 [node name="Whiteboard" type="Sprite" parent="Sprites"]
-editor/display_folded = true
 position = Vector2( 312, -192 )
 texture = ExtResource( 16 )
 offset = Vector2( 8, 0 )
@@ -690,7 +752,6 @@ script = ExtResource( 12 )
 text = [ "This doesn't seem right..." ]
 
 [node name="Teacher" type="Sprite" parent="Sprites"]
-editor/display_folded = true
 position = Vector2( 336, -160 )
 texture = ExtResource( 17 )
 offset = Vector2( 8, 0 )
@@ -764,7 +825,6 @@ position = Vector2( -1.90735e-06, 0 )
 shape = SubResource( 23 )
 
 [node name="Measurement Sys Speaker" type="Sprite" parent="Sprites"]
-editor/display_folded = true
 position = Vector2( 464, -176 )
 texture = ExtResource( 20 )
 offset = Vector2( 8, 0 )
@@ -818,7 +878,6 @@ position = Vector2( -1.90735e-06, 0 )
 shape = SubResource( 23 )
 
 [node name="Listening Test" type="Sprite" parent="Sprites"]
-editor/display_folded = true
 position = Vector2( 544, -96 )
 texture = ExtResource( 23 )
 offset = Vector2( 8, 0 )
@@ -845,7 +904,6 @@ position = Vector2( -1.90735e-06, 0 )
 shape = SubResource( 23 )
 
 [node name="ORTF-3D Object" type="Sprite" parent="Sprites"]
-editor/display_folded = true
 position = Vector2( 528, -208 )
 texture = ExtResource( 24 )
 offset = Vector2( 8, 0 )
@@ -869,7 +927,6 @@ position = Vector2( -0.583254, 0.000183105 )
 shape = SubResource( 23 )
 
 [node name="ORTF-3D NPC" type="Sprite" parent="Sprites"]
-editor/display_folded = true
 position = Vector2( 544, -208 )
 texture = ExtResource( 25 )
 offset = Vector2( 8, 0 )
@@ -896,7 +953,6 @@ position = Vector2( -1.90735e-06, 0 )
 shape = SubResource( 23 )
 
 [node name="Max-MSP patch" type="Sprite" parent="Sprites"]
-editor/display_folded = true
 position = Vector2( 592, -160 )
 texture = ExtResource( 25 )
 offset = Vector2( 8, 0 )
@@ -949,7 +1005,6 @@ position = Vector2( -1.90735e-06, 0 )
 shape = SubResource( 23 )
 
 [node name="The Talent" type="Sprite" parent="Sprites"]
-editor/display_folded = true
 position = Vector2( 720, -208 )
 texture = ExtResource( 18 )
 offset = Vector2( 8, 0 )
@@ -995,7 +1050,6 @@ position = Vector2( -0.583254, 0 )
 shape = SubResource( 23 )
 
 [node name="Virtual Mic" type="Sprite" parent="Sprites"]
-editor/display_folded = true
 position = Vector2( 640, -112 )
 texture = ExtResource( 23 )
 offset = Vector2( 8, 0 )
@@ -1022,7 +1076,6 @@ position = Vector2( -1.90735e-06, 0 )
 shape = SubResource( 23 )
 
 [node name="YCSAA" type="Sprite" parent="Sprites"]
-editor/display_folded = true
 position = Vector2( 704, -64 )
 texture = ExtResource( 10 )
 offset = Vector2( 8, 0 )
@@ -1049,7 +1102,6 @@ position = Vector2( -1.90735e-06, 0 )
 shape = SubResource( 23 )
 
 [node name="VR participant" type="Sprite" parent="Sprites"]
-editor/display_folded = true
 position = Vector2( 720, -64 )
 texture = ExtResource( 27 )
 offset = Vector2( 8, 0 )
@@ -1069,7 +1121,6 @@ position = Vector2( -1.90735e-06, 0 )
 shape = SubResource( 23 )
 
 [node name="Speaker" type="Sprite" parent="Sprites"]
-editor/display_folded = true
 position = Vector2( 944, -144 )
 texture = ExtResource( 20 )
 offset = Vector2( 8, 0 )
@@ -1089,7 +1140,6 @@ position = Vector2( -1.90735e-06, 0 )
 shape = SubResource( 23 )
 
 [node name="Programming" type="Sprite" parent="Sprites"]
-editor/display_folded = true
 position = Vector2( 800, -96 )
 texture = ExtResource( 17 )
 offset = Vector2( 8, 0 )
@@ -1135,7 +1185,7 @@ position = Vector2( -296.583, -153.073 )
 visible = false
 position = Vector2( -552.583, -281.073 )
 script = ExtResource( 12 )
-text = [ "I have a lot of experience in spatial audio!", "Having done a lot of work with the topic during my internships, I'm very comfortable with topics like ambisonics, HRTFs and binauralisation.", "I'm actually currently researching the effects of personalised HRTFs compared to generic HRTF's on gaming for my final year project!" ]
+text = [ "I have a lot of experience in spatial audio!", "Having done a lot of work with the topic during my internships, I'm very comfortable with topics like ambisonics, HRTFs and binauralisation.", "I researched the effects of personalised HRTFs compared to generic HRTF's on gaming for my final year project, which received a mark of 80%!" ]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Sprites/Spatial Audio/StaticBody2D"]
 position = Vector2( -1.90735e-06, 0 )
@@ -1188,14 +1238,13 @@ position = Vector2( -296.583, -153.073 )
 visible = false
 position = Vector2( -552.583, -281.073 )
 script = ExtResource( 12 )
-text = [ "I can speak a few extra languages! Although quite badly!", "I spent a year in Germany for my placement, so I picked up enough to get by!", "I'm also ethinically Chinese, so I grew up hearing Cantonese and Mandarin a lot.", "Though I can only just about understand it! Speaking it is a bit harder, and I absolutely cannot read it!" ]
+text = [ "I can speak a few extra languages! Although quite badly!", "I spent a year in Germany for my placement, so I picked up enough German to get by!", "I'm also ethinically Chinese, so I grew up hearing Cantonese and Mandarin a lot.", "Though I can only just about understand it! Speaking it is a bit harder, and I absolutely cannot read it!" ]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Sprites/Languages/StaticBody2D"]
 position = Vector2( -1.90735e-06, 0 )
 shape = SubResource( 23 )
 
 [node name="Game Dev" type="Sprite" parent="Sprites"]
-editor/display_folded = true
 position = Vector2( 848, -128 )
 z_index = 1
 texture = ExtResource( 17 )
@@ -1216,14 +1265,13 @@ position = Vector2( -296.583, -153.073 )
 visible = false
 position = Vector2( -552.583, -281.073 )
 script = ExtResource( 12 )
-text = [ "I've done some game development! You're in fact playing a game that I made!", "I have experience in game engines Godot and Unity.", "I also have some basic knowledge of audio middleware engines. The two I'm familiar with are Wwise and FMOD.", "I'm also a member of the Game Development Society at the University of York, where I attend talks on game development and participant in game jams.", "I've also given talks on music production and sound design at this society!" ]
+text = [ "I've done some game development! You're in fact playing a game that I made!", "I have experience in game engines Godot and Unity.", "I also have some basic knowledge of audio middleware engines. The two I'm familiar with are Wwise and FMOD.", "I was also a member of the Game Development Society at the University of York, where I attended talks on game development and participanted in game jams.", "I've also given talks on music production and sound design at this society!" ]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Sprites/Game Dev/StaticBody2D"]
 position = Vector2( -1.90735e-06, 0 )
 shape = SubResource( 23 )
 
 [node name="PC" type="Sprite" parent="Sprites"]
-editor/display_folded = true
 position = Vector2( 848, -160 )
 z_index = 3
 texture = ExtResource( 28 )
@@ -1244,7 +1292,6 @@ script = ExtResource( 12 )
 text = [ "A computer." ]
 
 [node name="Anime Screen" type="Sprite" parent="Sprites"]
-editor/display_folded = true
 position = Vector2( 1184, -176 )
 z_index = 3
 texture = ExtResource( 29 )
@@ -1270,7 +1317,6 @@ position = Vector2( 0.713501, -0.951317 )
 shape = SubResource( 31 )
 
 [node name="Music" type="Sprite" parent="Sprites"]
-editor/display_folded = true
 position = Vector2( 1088, -96 )
 z_index = 1
 texture = ExtResource( 31 )
@@ -1297,7 +1343,6 @@ position = Vector2( -1.90735e-06, 0 )
 shape = SubResource( 23 )
 
 [node name="AnimeSoc Chair" type="Sprite" parent="Sprites"]
-editor/display_folded = true
 position = Vector2( 1136, -112 )
 z_index = 1
 texture = ExtResource( 14 )
@@ -1327,7 +1372,6 @@ position = Vector2( -1.90735e-06, 0 )
 shape = SubResource( 23 )
 
 [node name="Shynn" type="Sprite" parent="Sprites"]
-editor/display_folded = true
 position = Vector2( 1184, -144 )
 z_index = 1
 texture = ExtResource( 14 )
@@ -1354,7 +1398,6 @@ position = Vector2( -1.90735e-06, 0 )
 shape = SubResource( 23 )
 
 [node name="Basketball" type="Sprite" parent="Sprites"]
-editor/display_folded = true
 position = Vector2( 1184, -80 )
 z_index = 1
 texture = ExtResource( 15 )
@@ -1448,7 +1491,6 @@ position = Vector2( -1.90735e-06, 0 )
 shape = SubResource( 23 )
 
 [node name="Hoop" type="Sprite" parent="Sprites"]
-editor/display_folded = true
 position = Vector2( 1360, -86.9268 )
 z_index = 1
 z_as_relative = false
@@ -1488,14 +1530,13 @@ position = Vector2( -24.583, -233.073 )
 visible = false
 position = Vector2( -200.583, -169.073 )
 script = ExtResource( 12 )
-text = [ "Wow you made it to the end! I hope you've learnt a bit about me and what I'm potentially capable of!", "If you need to contact me, please email me at kkss501@york.ac.uk." ]
+text = [ "Wow you made it to the end! I hope you've learnt a bit about me and what I'm potentially capable of!", "If you need to contact me, please email me at ks.kevinsum@gmail.com" ]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Sprites/Thank youu!/StaticBody2D"]
 position = Vector2( -1.90735e-06, 0 )
 shape = SubResource( 23 )
 
 [node name="Ray and Robin" type="Sprite" parent="Sprites"]
-editor/display_folded = true
 position = Vector2( 1440, -16 )
 texture = ExtResource( 10 )
 offset = Vector2( 8, 0 )
